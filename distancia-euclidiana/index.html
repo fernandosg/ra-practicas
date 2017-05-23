@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <title>Practica distancia euclidiana con ThreeJS</title>
+</head>
+<body>
+  <section>
+    <h3>Explicación</h3>
+    <span>Para probar cuando un objeto colisona a otro (gracias al calculo de la distancia euclidiana) utiliza los botones que se encuentran abajo del canvas</span>
+    <br/>
+    <span>Cada boton tiene un texto el cual indica un movimiento a realizar en el cuadrado que se encuentra inicialmente del lado derecho.</span>
+    <br/>
+    <span>Al identificar que este cuadro "colisiona" con el cuadro del centro, aparecerá un mensaje de texto debajo de los botones indicando la colision, caso contrario,
+       dira No colisiono</span>
+  </section>
+  <div id="canvas">
+  </div>
+  <button id="moverIzquierda" onclick="moverElemento('izq')"><</button>
+  <button id="moverDerecha" onclick="moverElemento('der')">></button>
+  <button id="moverArriba" onclick="moverElemento('arr')">^</button>
+  <button id="moverAbajo" onclick="moverElemento('aba')">v</button>
+  <div id="resultado">
+    <span id="mensaje"></span>
+  </div>
+  <script src="./js/three.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
